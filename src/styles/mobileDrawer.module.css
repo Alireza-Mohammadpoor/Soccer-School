@@ -1,0 +1,156 @@
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1099;
+}
+
+.mobileDrawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 75%;
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1100;
+  animation: slideIn 0.3s ease-out forwards;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep profile and close icon layout as is */
+.drawerHeader {
+  display: flex;
+  flex-direction: row-reverse; /* avatar on right, close icon on left */
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.drawerCloseIcon {
+  cursor: pointer;
+}
+
+/* Profile info container: avatar + text */
+.drawerProfileInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  /* no direction here to keep avatar left and text right */
+}
+
+/* Profile avatar */
+.profileAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+/* Profile text - apply RTL only here */
+.profileText {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  color: #333;
+  direction: rtl;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 30%);
+  font-weight: 500;
+}
+
+/* Drawer navigation links */
+.drawerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  direction: rtl; /* RTL text direction here */
+}
+
+.drawerLinks li a {
+  display: block; /* ensure link takes full width */
+  color: #333;
+  font-size: 1.1rem;
+  text-decoration: none;
+  white-space: nowrap; /* avoid wrapping */
+}
+
+.drawerLinks li a:hover {
+  color: #ffc107;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.socialIcons a {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.socialIcons a:hover {
+  color: #007bff;
+}
+
+.drawerFooter {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  direction: rtl;
+  text-align: center;
+}
+
+.footerText {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialIcons a {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s ease;
+  /* color: hsl(0, 0%, 83%); */
+}
+
+.socialIcons a:hover {
+  color: #007bff;
+}
+
+
+
+@keyframes slideIn {
+  from { right: -100%; }
+  to { right: 0; }
+}

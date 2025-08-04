@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500;700&display=swap');
+
+.navbar {
+  font-family: 'Vazirmatn', sans-serif;
+  direction: ltr;
+  position: relative;
+  z-index: 1000;
+  background-image: url('/pexels-kampus-8941650.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  transition: padding-top 0.3s ease;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+/* Mobile Top Fixed Bar */
+.mobileHeaderBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: white;
+  z-index: 1100;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header center text */
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0 0 1px whitesmoke;
+  font-size: 1.7rem;
+  font-weight: 700;
+  direction: rtl;
+  color: #fffde7;
+}
+
+/* Logo in main navbar */
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  direction: rtl;
+}
+
+.logoImage {
+  height: 90px;
+  width: 90px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logoImage:hover {
+  transform: scale(1.08);
+}
+
+/* Main nav links (desktop) */
+.navLinks {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.navLinks li {
+  font-weight: 500;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navLinks a:hover {
+  color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.15);
+  transform: scale(1.05);
+}
+
+.greeting {
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Menu hamburger icon */
+.menuIcon {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1010;
+  cursor: pointer;
+}
+
+/* Drawer overlay */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1099;
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 75%;
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1100;
+  animation: slideIn 0.3s ease-out forwards;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Drawer header (logo + X) */
+/* .drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+} */
+
+
+.drawerHeader {
+  display: flex;
+  flex-direction: row-reverse; /* avatar on right, close icon on left */
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.drawerLogo {
+  margin: 0;
+}
+
+.drawerLogo img {
+  height: 70px;
+  width: 70px;
+}
+
+/* X icon in drawer */
+/* .drawerCloseIcon {
+  position: static;
+  cursor: pointer;
+} */
+
+/* 
+.drawerCloseIcon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1200; 
+  cursor: pointer;
+  align-items: start;
+  text-align: left;
+  justify-content: left;
+} */
+
+
+.drawerCloseIcon {
+  cursor: pointer;
+}
+
+
+
+
+/* Drawer nav links */
+.drawerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.drawerLinks li a {
+  color: #333;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.drawerLinks li a:hover {
+  color: #ffc107;
+}
+
+/* User info section in drawer */
+.drawerUserInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.drawerUserIcon {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.drawerUserDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drawerUserDetails span {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.loginLink {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+  background-color: transparent;
+  color: white;
+}
+
+.loginLink:hover {
+  color: #ffffff;
+  background-color: rgba(255, 193, 7, 0.15);
+  transform: scale(1.05);
+}
+
+/* Animation for drawer */
+@keyframes slideIn {
+  from { right: -100%; }
+  to { right: 0; }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .logo {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .mobileHeaderBar {
+    display: flex;
+    z-index: 1100;
+  }
+
+  .mobileLogo {
+    position: static;
+  }
+
+  .navbar {
+    padding-top: 6rem;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .greeting {
+    color: black;
+  }
+
+  .loginLink {
+    color: black;
+  }
+
+  .loginLink:hover {
+    color: #333;
+  }
+
+  .drawerUserIconImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 2px solid #ffc107; optional golden border */
+}
+
+	.drawerProfileInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  direction: rtl;
+		}
+
+		.profileAvatar {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 2px solid #333;
+		}
+
+		.profileText {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.95rem;
+		color: #333;
+		}
+
+		.profileText .name {
+		font-weight: 600;
+		}
+
+		.profileText .subtitle {
+		font-size: 0.85rem;
+		color: #666;
+		}
+
+
+}
