@@ -362,7 +362,7 @@ export default function ProductBox({
   const colorMap = {
     سفید: "#ffffff",
     مشکی: "#000000",
-    آبی: "#3b82f6",
+    قرمز: "red",
     "سرمه‌ای": "#1e3a8a",
     قرمز: "#ef4444",
     زرد: "#facc15",
@@ -471,7 +471,7 @@ export default function ProductBox({
         )}
 
         <p className={styles.price}>
-          <strong>قیمت:</strong> {priceToman.toLocaleString()} تومان
+          {priceToman.toLocaleString()} تومان
         </p>
       </div>
 

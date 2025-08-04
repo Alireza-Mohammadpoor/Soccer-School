@@ -66,7 +66,7 @@ export default function MobileDrawer({ user, closeDrawer }) {
         <div className={styles.drawerHeader}>
           <div className={styles.drawerProfileInfo}>
             <div className={styles.profileText}>
-              <span className={styles.name}>سلام {user.name}</span>
+              <span className={styles.name}> {user.name}</span>
               <span className={styles.subtitle}>همراه شما در مسیر پیشرفت</span>
             </div>
             <img
@@ -81,7 +81,7 @@ export default function MobileDrawer({ user, closeDrawer }) {
         </div>
 
         <ul className={styles.drawerLinks} onClick={closeDrawer}>
-          <li style={{boxShadow : "0 1px 2px hsl(0, 0%, 60%)" , background : "hsl(0, 0%, 83%)", padding : "6px", borderRadius : "20px"}}>
+          <li style={{boxShadow : "0 1px 2px hsl(0, 0%, 60%)" , background : "hsl(0, 0%, 83%)", padding : "6px", borderRadius : "20px", justifyContent : "center", textAlign : "center", alignItems : "center", fontWeight : "600"}}>
             <Link href="/cart">سبد خرید</Link>
           </li>
         </ul>

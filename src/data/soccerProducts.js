@@ -87,7 +87,7 @@ const soccerSchoolSales = {
           id: "shirt01",
           name: "تی‌شرت تمرینی",
           sizes: ["XS", "S", "M", "L", "XL"],
-          colors: ["سفید", "مشکی", "آبی"],
+          colors: ["سفید", "مشکی", "قرمز"],
           priceToman: 800000,
           image: "/fashion-bg.jpg",
           rating: 4
@@ -96,7 +96,7 @@ const soccerSchoolSales = {
           id: "shorts01",
           name: "شورت ورزشی",
           sizes: ["XS", "S", "M", "L", "XL"],
-          colors: ["مشکی", "آبی"],
+          colors: ["مشکی", "قرمز"],
           priceToman: 650000,
           image: "/fashion-bg.jpg",
           rating: 3
@@ -114,7 +114,7 @@ const soccerSchoolSales = {
           id: "jacket01",
           name: "کاپشن گرم‌کن",
           sizes: ["S", "M", "L", "XL"],
-          colors: ["سرمه‌ای", "مشکی"],
+          colors: ["قرمز", "مشکی"],
           priceToman: 1500000,
           image: "/fashion-bg.jpg",
           rating: 4
@@ -141,7 +141,7 @@ const soccerSchoolSales = {
           id: "hoodie01",
           name: "هودی تمرینی",
           sizes: ["M", "L", "XL"],
-          colors: ["طوسی", "آبی نفتی"],
+          colors: ["طوسی", "قرمز"],
           priceToman: 1300000,
           image: "/fashion-bg.jpg",
           rating: 4.6

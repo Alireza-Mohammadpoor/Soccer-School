@@ -78,8 +78,10 @@
 }
 
 .price {
-  font-size: 0.875rem;
-  color: #111827;
+  font-size: 0.879rem;
+  /* color:#4b5563; */
+  font-weight: 700;
+  /* font-family: 'Vazir'; */
 }
 
 .colors {
