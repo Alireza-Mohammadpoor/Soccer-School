@@ -168,7 +168,7 @@ export default function AdminOrdersPage() {
             placeholder="رمز عبور"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            style={{ padding: "0.5rem", fontSize: "1rem" }}
+            style={{ padding: "0.5rem", fontSize: "1rem" , color : "white"}}
           />
           <button type="submit" style={{ marginLeft: "1rem", padding: "0.5rem" }}>
             ورود
