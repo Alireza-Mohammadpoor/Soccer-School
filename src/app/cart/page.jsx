@@ -240,23 +240,23 @@ export default function CartPage() {
               </div>
 
               <div>
-                <button onClick={() => updateQuantity(item.id, -1)}>-</button>
-                <span style={{ margin: "0 0.5rem" }}>{item.quantity}</span>
-                <button onClick={() => updateQuantity(item.id, 1)}>+</button>
+                <button onClick={() => updateQuantity(item.id, -1)} style={{fontSize : "1.4rem"}}>-</button>
+                <span style={{ margin: "0 0.5rem",fontWeight : "600"  }}>{item.quantity}</span>
+                <button onClick={() => updateQuantity(item.id, 1)} style={{fontSize : "1.4rem"}}>+</button>
               </div>
 
               <button
                 onClick={() => removeFromCart(item.id)}
                 style={{
-                  background: "#ef4444",
-                  color: "white",
-                  padding: "0.3rem 0.5rem",
+                  // background: "#ef4444",
+                  // color: "white",
+                  padding: "0.3rem 0.8rem",
                   border: "none",
-                  borderRadius: "0.25rem",
+                  borderRadius: "1.25rem",
                   cursor: "pointer",
                 }}
               >
-                حذف
+                <img src="/bin.png" alt="bin" style={{width : "25px", height : "25px"}} />
               </button>
             </div>
           ))}
