@@ -12,7 +12,7 @@ const soccerSchoolSales = {
 				{
 					id: "pack-basic",
 					name: "پک پایه تمرینی",
-					image: "/images/pack-basic.jpg",
+					image: "/suitable-sportwear.jpg",
 					itemsIncluded: [
 					"تی‌شرت تمرینی",
 					"شورت ورزشی",
@@ -25,7 +25,7 @@ const soccerSchoolSales = {
 				{
 					id: "pack-pro",
 					name: "پک حرفه‌ای",
-					image: "/images/pack-pro.jpg",
+					image: "/suitable-sportwear.jpg",
 					itemsIncluded: [
 					"تی‌شرت تمرینی",
 					"شورت ورزشی",
@@ -40,7 +40,7 @@ const soccerSchoolSales = {
 				{
 					id: "pack-kids",
 					name: "پک کودک",
-					image: "/images/pack-kids.jpg",
+					image: "مهم-ترین-نکات-در-انتخاب-لباس-ورزشی--600x300.jpg",
 					itemsIncluded: [
 					"تی‌شرت سایز کودک",
 					"شورت",
@@ -53,7 +53,7 @@ const soccerSchoolSales = {
 				{
 					id: "pack-elite",
 					name: "پک مربی حرفه‌ای",
-					image: "/images/pack-elite.jpg",
+					image: "مهم-ترین-نکات-در-انتخاب-لباس-ورزشی--600x300.jpg",
 					itemsIncluded: [
 					"ست لباس کامل مربی",
 					"ساعت ورزشی",
@@ -67,7 +67,7 @@ const soccerSchoolSales = {
 				{
 					id: "pack-goalkeeper",
 					name: "پک دروازه‌بان",
-					image: "/images/pack-goalkeeper.jpg",
+					image: "/suitable-sportwear.jpg",
 					itemsIncluded: [
 					"لباس دروازه‌بان",
 					"دستکش دروازه‌بانی",
@@ -89,7 +89,7 @@ const soccerSchoolSales = {
           sizes: ["XS", "S", "M", "L", "XL"],
           colors: ["سفید", "مشکی", "قرمز"],
           priceToman: 800000,
-          image: "/fashion-bg.jpg",
+          image: "/6863067dbf668.webp",
           rating: 4
         },
         {
@@ -98,7 +98,7 @@ const soccerSchoolSales = {
           sizes: ["XS", "S", "M", "L", "XL"],
           colors: ["مشکی", "قرمز"],
           priceToman: 650000,
-          image: "/fashion-bg.jpg",
+          image: "/shrt.jpg",
           rating: 3
         },
         {
@@ -107,7 +107,7 @@ const soccerSchoolSales = {
           sizes: ["S", "M", "L"],
           colors: ["سفید", "مشکی"],
           priceToman: 300000,
-          image: "/fashion-bg.jpg",
+          image: "/جوراب-نیم-ساق-اسپرت-نایک-استپ-دار-مدل-OPT-17520-5.jpg",
           rating: 5
         },
         {
@@ -116,16 +116,16 @@ const soccerSchoolSales = {
           sizes: ["S", "M", "L", "XL"],
           colors: ["قرمز", "مشکی"],
           priceToman: 1500000,
-          image: "/fashion-bg.jpg",
+          image: "product-20603-2.jpg",
           rating: 4
         },
         {
           id: "gloves01",
-          name: "دستکش ورزشی",
+          name: "مچبند ورزشی",
           sizes: ["S", "M", "L"],
           colors: ["سیاه", "قرمز"],
           priceToman: 400000,
-          image: "/fashion-bg.jpg",
+          image: "/mch.jpg",
           rating: 4.2
         },
         {
@@ -134,7 +134,7 @@ const soccerSchoolSales = {
           sizes: ["Free"],
           colors: ["مشکی", "خاکستری"],
           priceToman: 200000,
-          image: "/fashion-bg.jpg",
+          image: "/1744986061_blob-2298.jpg",
           rating: 3.8
         },
         {
@@ -143,7 +143,7 @@ const soccerSchoolSales = {
           sizes: ["M", "L", "XL"],
           colors: ["طوسی", "قرمز"],
           priceToman: 1300000,
-          image: "/fashion-bg.jpg",
+          image: "/1697614857_89.jpg.webp",
           rating: 4.6
         }
       ]
